@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home page
+{% endblock %}
+
+{% block content %}
+  <!--This is the content of our home page.-->
+  <div class="container text-center mt-5">
+    <h1>Welcome to the Market App</h1>
+    <p class="lead">Buy and Sell Products with Ease</p>
+    <a href="{{ url_for('market_page') }}" class="btn btn-primary btn-lg mt-3">Get Started</a>
+  </div>
+{% endblock%}
